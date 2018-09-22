@@ -35,7 +35,8 @@ $endfor$
   $if(title)$
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">$title$</a>
+      <a class="navbar-brand" href="#">        
+        $title$</a>
 	$for(author)$
           <li><p class="navbar-text">$author$</p></li>
           $endfor$
@@ -85,7 +86,15 @@ $endfor$
  
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script>
+    jQuery('.navbar-brand').click(function(e){
+      e.preventDefault();
+      jQuery('#sidebar-wrapper').toggle();
+    });
+
     jQuery(document).ready(function(){
+
+
+
     jQuery('a[href^="#"]').on('click', function(e) {
     var hash  = this.hash,
  
@@ -93,11 +102,13 @@ $endfor$
             window.location.hash = hash;
         };
 
+    if(hash){
     if ( hash !== '#header' ) {
         jQuery('html,body').animate({ 'scrollTop': jQuery(hash).offset().top -50 }, 500, addHash);
     } else {
         jQuery('html,body').animate({ 'scrollTop': jQuery(hash).offset().top }, 500, addHash);
     }
+  }
     e.preventDefault();
 });
     })
