@@ -24,3 +24,26 @@ title: Codestellar Notebook
 # Angular Notes
 
 ## Angular NGRX
+
+* What is **state**?
+What the user did? What the user sees? Some of the state we might want to save to make it persistent.
+
+* What is the problem? Why it is so hard?
+Always tracking where a change happened, where the state of the application got changed.
+
+* How we are informing?
+Event Emitters, Subjects to announce that 'this' has been changed. Well, we are doing it right.
+
+* As your app grows, even this service driven subjects may be hard to maintain.
+
+* So, we want to have 1 central place to maintain application state. Single Source of Truth. 
+
+* How do we change the state? REDUX PATTERN
+** Actions - Dispatch action and sent to. e.g. SAVE
+** Reducer - Take the payload as input and override the state i.e. immutable.
+** Store - Which is containing the state.
+
+So, we are achieving this in Angular using ngrx.
+
+
+
