@@ -12,6 +12,18 @@ title: Codestellar Notebook
 * A simple git push should publish my website. Github Pages is a great way but I wanted a custom template as well.
 * Wordpress, Blogger and N number of soultions are there but this attracted me.
 
+## Getting Started
+Want to own this notebook? Here are the steps
+* Get your own repository [link](https://pages.github.com/)
+* Download my repository
+* Copy code in <yourrepo>.github.io local repo
+* Update notes.md
+* Download [Pandoc](https://pandoc.org/installing.html)
+* Run the command in readme.md in commandline
+* Commit and Push your changes
+* Yay! you own it.
+* All you need to do is to update notes.md next time.
+
 ## About Me
 
 ![](images/me.jpg)
