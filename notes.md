@@ -28,10 +28,10 @@ Want to own this notebook? Here are the steps
 
 ![](images/me.jpg)
 1. Principal Consultant at Technossus
-2. 7+ years of experience in Web Application Development
-3. MCSD App Builder
-4. Open Teacher
-5. Learner.
+1. 7+ years of experience in Web Application Development
+1. MCSD App Builder
+1. Open Teacher
+1. Learner.
 
 # Angular Notes
 
