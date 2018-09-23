@@ -27,11 +27,12 @@ Want to own this notebook? Here are the steps
 ## About Me
 
 ![](images/me.jpg)
-1. Principal Consultant at Technossus
-1. 7+ years of experience in Web Application Development
-1. MCSD App Builder
-1. Open Teacher
-1. Learner.
+
+* Principal Consultant at Technossus
+* 7+ years of experience in Web Application Development
+* MCSD App Builder
+* Open Teacher
+* Learner.
 
 # Angular Notes
 
