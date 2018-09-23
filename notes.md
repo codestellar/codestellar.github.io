@@ -13,7 +13,9 @@ title: Codestellar Notebook
 * Wordpress, Blogger and N number of soultions are there but this attracted me.
 
 ## Getting Started
+
 Want to own this notebook? Here are the steps
+
 * Get your own repository [link](https://pages.github.com/)
 * Download my repository
 * Copy code in <yourrepo>.github.io local repo
