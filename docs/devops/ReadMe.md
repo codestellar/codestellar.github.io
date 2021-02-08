@@ -66,3 +66,21 @@ docker run \
 ````shell
 docker volume list
 ````
+- Now that you have the container active, run:
+`````shell
+docker ps -a
+````
+
+- Get the initial password:
+````shell
+docker exec <container_name_or_id> cat /var/jenkins_home/secrets/initialAdminPassword
+````
+
+::: Tip to run bash commands inside your container
+docker exec -it <container_name_or_id> bash
+:::
+
+
+::: Warning
+Simply removing the container and images does not remove the volume
+:::
