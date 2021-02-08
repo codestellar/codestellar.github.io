@@ -47,7 +47,7 @@ docker run --name jenkins-docker --rm --detach \
     docker build -t myjenkins-blueocean:1.1 .
     ````
 - Run your image as container:
-````
+````shell
 docker run \
   --name jenkins-blueocean \
   --rm \
@@ -67,7 +67,7 @@ docker run \
 docker volume list
 ````
 - Now that you have the container active, run:
-`````shell
+````shell
 docker ps -a
 ````
 
@@ -76,11 +76,10 @@ docker ps -a
 docker exec <container_name_or_id> cat /var/jenkins_home/secrets/initialAdminPassword
 ````
 
-::: Tip to run bash commands inside your container
+::: tip To run bash commands inside your container
 docker exec -it <container_name_or_id> bash
 :::
 
-
-::: Warning
+::: warning
 Simply removing the container and images does not remove the volume
 :::

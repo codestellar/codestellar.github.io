@@ -6,12 +6,43 @@ module.exports = {
         displayAllHeaders: true,
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Azure', link: '/azure/' },
+            { text: 'Azure', link: '/azure/', items: [
+              {text: 'DevOps', link: 'some'}
+            ] },
             { text: 'DevOps', link: '/devops/' },
+            { text: 'php', link: '/php/' },
             { text: 'LinkedIn', link: 'https://www.linkedin.com/in/codestellar/' }
-          ],        
-        sidebar: 'auto' 
-    },
+          ],              
+          sidebar: [
+            {
+                title: 'Azure',   // required
+                path: '/azure/',      // optional, link of the title, which should be an absolute path and must exist
+                collapsable: false, // optional, defaults to true
+                sidebarDepth: 1,    // optional, defaults to 1
+                children: [
+                  '/'
+                ]
+            },
+            {
+              title: 'AWS',   // required
+              path: '/aws/',      // optional, link of the title, which should be an absolute path and must exist
+              collapsable: false, // optional, defaults to true
+              sidebarDepth: 1,    // optional, defaults to 1
+              children: [
+                '/'
+              ]
+            },
+            {
+              title: '.Net Core',   // required
+              path: '/netcore/',      // optional, link of the title, which should be an absolute path and must exist
+              collapsable: false, // optional, defaults to true
+              sidebarDepth: 1,    // optional, defaults to 1
+              children: [
+                '/'
+              ]
+            }                        
+          ]
+      },
     // configureWebpack: {
     //   resolve: {
     //     alias: {
