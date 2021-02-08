@@ -6,8 +6,8 @@ module.exports = {
         displayAllHeaders: true,
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Guide', link: '/guide/' },
-            { text: 'External', link: 'https://google.com' }
+            { text: 'Azure', link: '/azure/' },
+            { text: 'LinkedIn', link: 'https://www.linkedin.com/in/codestellar/' }
           ],        
         sidebar: 'auto' 
     },
