@@ -1,0 +1,1 @@
+# JavaScript notes will be coming here

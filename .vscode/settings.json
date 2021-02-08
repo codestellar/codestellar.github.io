@@ -1,5 +1,0 @@
-{
-    "editor.insertSpaces": false,
-    "editor.wrappingColumn": 0,
-    "pandoc.htmlOptString": "--toc --toc-depth 2 -f markdown_github -t html5 --css template.css"
-}

@@ -1,0 +1,16 @@
+{
+  "name": "codestellar.github.io",
+  "version": "1.0.0",
+  "description": "My notebook where I share all my learnings",
+  "main": "index.js",
+  "repository": "https://github.com/codestellar/codestellar.github.io.git",
+  "author": "Gaurav Madaan <gaurav.madaan@technossus.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.0"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }  
+}
