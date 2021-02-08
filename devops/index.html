@@ -8,7 +8,7 @@
     
     <meta name="description" content="The website is my public notebook, where I share what I have learnt. I am mostly working on Azure Portal, Azure DevOps, .Net Core, HTML, CSS and JavaScript Technologies.">
     
-    <link rel="preload" href="/assets/css/0.styles.d39084ab.css" as="style"><link rel="preload" href="/assets/js/app.710bd1a2.js" as="script"><link rel="preload" href="/assets/js/2.9de06542.js" as="script"><link rel="preload" href="/assets/js/10.5e0a681e.js" as="script"><link rel="prefetch" href="/assets/js/11.4ff6a766.js"><link rel="prefetch" href="/assets/js/3.85c57184.js"><link rel="prefetch" href="/assets/js/4.865692a8.js"><link rel="prefetch" href="/assets/js/5.81254301.js"><link rel="prefetch" href="/assets/js/6.6e8c67be.js"><link rel="prefetch" href="/assets/js/7.acbca4f8.js"><link rel="prefetch" href="/assets/js/8.e4e603af.js"><link rel="prefetch" href="/assets/js/9.c322ea3a.js">
+    <link rel="preload" href="/assets/css/0.styles.d39084ab.css" as="style"><link rel="preload" href="/assets/js/app.1537d120.js" as="script"><link rel="preload" href="/assets/js/2.9de06542.js" as="script"><link rel="preload" href="/assets/js/10.9e8f351f.js" as="script"><link rel="prefetch" href="/assets/js/11.4ff6a766.js"><link rel="prefetch" href="/assets/js/3.85c57184.js"><link rel="prefetch" href="/assets/js/4.865692a8.js"><link rel="prefetch" href="/assets/js/5.81254301.js"><link rel="prefetch" href="/assets/js/6.6e8c67be.js"><link rel="prefetch" href="/assets/js/7.acbca4f8.js"><link rel="prefetch" href="/assets/js/8.e4e603af.js"><link rel="prefetch" href="/assets/js/9.c322ea3a.js">
     <link rel="stylesheet" href="/assets/css/0.styles.d39084ab.css">
   </head>
   <body>
@@ -65,7 +65,22 @@ RUN jenkins-plugin-cli --plugins blueocean:1.24.4
   --volume jenkins-docker-certs:/certs/client:ro \
   myjenkins-blueocean:1.1
 </code></pre></div><ul><li>Once you have run the container, please note that you have your jenkins files available in a docker volume. So, run the following commands to realize the same:</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>docker volume list
-</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.710bd1a2.js" defer></script><script src="/assets/js/2.9de06542.js" defer></script><script src="/assets/js/10.5e0a681e.js" defer></script>
+</code></pre></div><ul><li>Now that you have the container active, run:</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>docker <span class="token function">ps</span> -a
+```<span class="token variable"><span class="token variable">`</span>
+
+- Get the initial password:
+<span class="token variable">`</span></span>``<span class="token variable"><span class="token variable">`</span>shell
+docker <span class="token builtin class-name">exec</span> <span class="token operator">&lt;</span>container_name_or_id<span class="token operator">&gt;</span> <span class="token function">cat</span> /var/jenkins_home/secrets/initialAdminPassword
+<span class="token variable">`</span></span>```
+
+::: Tip to run <span class="token function">bash</span> commands inside your container
+docker <span class="token builtin class-name">exec</span> -it <span class="token operator">&lt;</span>container_name_or_id<span class="token operator">&gt;</span> <span class="token function">bash</span>
+:::
+
+
+::: Warning
+Simply removing the container and images does not remove the volume
+:::</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1537d120.js" defer></script><script src="/assets/js/2.9de06542.js" defer></script><script src="/assets/js/10.9e8f351f.js" defer></script>
   </body>
 </html>
