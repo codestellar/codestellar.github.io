@@ -14,6 +14,6 @@ features:
 footer: MIT Licensed | Copyright © 2020-present Gaurav Madaan
 ---
 
-Hello and Welcome to my website. Codestellar! On this portal, I am committed to share whatever I learn or have learnt. Since, in my daily life, I work on different technologies and business problems, I did not want to focus on a particular topic for this website, instead, I am going to share what problem I was facing and what I learnt and how I learnt that. Simple! Let's get started.
+# Welcome
 
-[[toc]]
+Hello and Welcome to my website. Codestellar! On this portal, I am committed to share whatever I learn or have learnt. Since, in my daily life, I work on different technologies and business problems, I did not want to focus on a particular topic for this website, instead, I am going to share what problem I was facing and what I learnt and how I learnt that. Simple! Let's get started.

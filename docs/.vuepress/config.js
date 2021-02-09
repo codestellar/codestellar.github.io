@@ -6,41 +6,42 @@ module.exports = {
         displayAllHeaders: true,
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Azure', link: '/azure/', items: [
-              {text: 'DevOps', link: 'some'}
+            { text: 'Azure', link: '/', items: [
+              {text: 'Azure', link: '/azure'}
             ] },
-            { text: 'DevOps', link: '/devops/' },
+            { 
+              text: 'JavaScript', 
+              items: [
+                {text: 'Performance Testing with K6', link: '/javascript/k6.md'}
+              ]
+            },
+            { text: 'DevOps', link: '/devops',
+                items: [
+                  {text: 'Jenkins: Getting Started', link: '/devops/jenkins-getting-started.md'}
+                ]          
+            },
             { text: 'php', link: '/php/' },
             { text: 'LinkedIn', link: 'https://www.linkedin.com/in/codestellar/' }
-          ],              
+          ],         
           sidebar: [
             {
-                title: 'Azure',   // required
-                path: '/azure/',      // optional, link of the title, which should be an absolute path and must exist
-                collapsable: false, // optional, defaults to true
-                sidebarDepth: 1,    // optional, defaults to 1
-                children: [
-                  '/'
-                ]
-            },
-            {
-              title: 'AWS',   // required
-              path: '/aws/',      // optional, link of the title, which should be an absolute path and must exist
+              title: 'DevOps',   // required
+              path: '/devops/',      // optional, link of the title, which should be an absolute path and must exist
               collapsable: false, // optional, defaults to true
               sidebarDepth: 1,    // optional, defaults to 1
               children: [
-                '/'
+                '/devops/jenkins-getting-started'
               ]
             },
             {
-              title: '.Net Core',   // required
-              path: '/netcore/',      // optional, link of the title, which should be an absolute path and must exist
+              title: 'JavaScript',   // required
+              path: '/javascript/',      // optional, link of the title, which should be an absolute path and must exist
               collapsable: false, // optional, defaults to true
               sidebarDepth: 1,    // optional, defaults to 1
               children: [
-                '/'
+                '/javascript/k6'
               ]
-            }                        
+            }
           ]
       },
     // configureWebpack: {
