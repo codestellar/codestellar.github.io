@@ -6,6 +6,7 @@ module.exports = {
         displayAllHeaders: true,
         nav: [
             { text: 'Home', link: '/' },
+            { text: 'News & Events', link: '/news-and-events/' },
             { text: 'Blog', link: '/blog', items: [
               {text: 'Azure', link: '/azure/'}
             ] },
