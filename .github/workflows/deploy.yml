@@ -1,9 +1,10 @@
-name: Deploy VuePress Site
+name: Deploy Website
 
 on:
   push:
     branches:
       - master  # Change this to your default branch
+  workflow_dispatch:    
 
 jobs:
   build-deploy:
