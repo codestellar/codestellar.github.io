@@ -1,11 +1,7 @@
 # News and Events
 
-::: tip What was the solution?
-I chose Jenkins as I can install it on my own server, had some initial problems like setting up the password, re-installations, containerizing. So, I summed it up here.
-:::
-
-::: Know about the recent events I participated in and what's coming up
-You will get that info here
+::: tip What's here?
+What happened in the past and what is coming up?
 :::
 
 1. ### [Panel Discussion in Elevate 2024 - SVIET]([https://](https://x.com/svietofficial/status/1831625428462612922))
