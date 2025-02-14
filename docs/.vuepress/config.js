@@ -12,6 +12,7 @@ module.exports = {
         text: "Blog",
         link: "/blog",
         items: [{ text: "Azure", link: "/azure/" }],
+        items: [{ text: "AWS", link: "/aws/" }],
       },
       {
         text: "JavaScript",
