@@ -29,7 +29,14 @@ module.exports = {
           },
         ],
       },
-      { text: "php", link: "/php/" },
+      { text: "php", link: "/php/",
+        items: [
+          {
+            text: "Laravel CRM",
+            link: "/php/laravel-crm.md",
+          },
+        ],
+       },
       { text: "more", link: "/more/" },
       { text: "LinkedIn", link: "https://www.linkedin.com/in/codestellar/" },
     ],
