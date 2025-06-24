@@ -14,6 +14,11 @@ module.exports = {
         items: [{ text: "Azure", link: "/azure/" },{ text: "AWS", link: "/aws/" }],
       },
       {
+        text: "Gen AI",
+        link: "/gen-ai",
+        items: [{ text: "MCP", link: "/gen-ai/mcp" }],
+      },      
+      {
         text: "JavaScript",
         items: [
           { text: "Performance Testing with K6", link: "/javascript/k6.md" },
@@ -42,13 +47,6 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: "Main menu", // required
-        path: "/more/", // optional, link of the title, which should be an absolute path and must exist
-        collapsable: false, // optional, defaults to true
-        sidebarDepth: 1, // optional, defaults to 1
-        children: ["/gen-ai/"],
-      },
-      {
         title: "DevOps", // required
         path: "/devops/", // optional, link of the title, which should be an absolute path and must exist
         collapsable: false, // optional, defaults to true
@@ -60,7 +58,7 @@ module.exports = {
         path: "/more/", // optional, link of the title, which should be an absolute path and must exist
         collapsable: false, // optional, defaults to true
         sidebarDepth: 1, // optional, defaults to 1
-        children: ["/gen-ai/"],
+        children: ['/gen-ai/'],
       },
     ],
   },
