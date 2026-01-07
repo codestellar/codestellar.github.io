@@ -8,6 +8,9 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       { text: "News & Events", link: "/news-and-events/" },
+      { text: "Azure", link: "/azure/",
+        items: [{text: 'Setting up AKS', link: '/azure/aks/getting-started'}, {text: 'Enable Autoscaling', link: '/azure/aks/autoscale-aks'}]
+       },
       {
         text: "Blog",
         link: "/blog",
@@ -45,7 +48,7 @@ module.exports = {
       { text: "more", link: "/more/" },
       { text: "LinkedIn", link: "https://www.linkedin.com/in/codestellar/" },
     ],
-    sidebar: [
+    sidebar: [      
       {
         title: "DevOps", // required
         path: "/devops/", // optional, link of the title, which should be an absolute path and must exist
@@ -59,7 +62,7 @@ module.exports = {
         collapsable: false, // optional, defaults to true
         sidebarDepth: 1, // optional, defaults to 1
         children: ['/gen-ai/'],
-      },
+      }
     ],
   },
   // configureWebpack: {
